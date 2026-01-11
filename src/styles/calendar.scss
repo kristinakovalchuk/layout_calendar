@@ -4,7 +4,6 @@
   gap: $calendar-gap;
   padding: $padding;
   box-sizing: border-box;
-  cursor: pointer;
 
   width: calc((#{$day-size} * 7) + (#{$calendar-gap} * 6) + (#{$padding} * 2));
 
@@ -21,7 +20,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: transform 0.5s;
+    cursor: pointer;
+    transition: transform 0.5s, background-color 0.5s;
 
     &::before {
       font-family: $font-family;
